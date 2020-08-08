@@ -1,0 +1,111 @@
+/* Add contact Modal */
+
+.addContactModal {
+    width: 100vw;
+    height: 100vh;
+     background-color: rgba(0, 0, 0, .6);
+     display: flex;
+     position: fixed;
+     justify-content: center;
+     align-items: center;
+     z-index: 3;
+    opacity: 0;
+     z-index: -700;
+     transition: all .5s ;
+     transform: scale(.5);
+     
+    
+   
+}
+
+
+.addContactModal__content {
+
+    background-color: white;
+    width: 40rem;
+    height: 75%;
+    padding: 5rem 3rem;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-auto-rows: min-content;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1.1rem;
+    position: relative;
+}
+
+.addContactModal__content i {
+
+    position: absolute;
+    font-size: 3rem;
+    right: 2rem;
+    top: 1rem;
+    color: rgba(0, 0, 0, .6);
+}
+
+
+.addContactModal__content h3 {
+
+    color: rgba(22,23,43, .5);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+.addContactModal__content input {
+
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 3px;
+    transition: all .2s;
+    display: block;
+    margin: 1rem;
+    
+
+    border: 1px solid rgba(0, 0, 0, .5);
+
+}
+
+.addContactModal__content input::placeholder {
+
+    color: rgba(0, 0, 0, .2);
+   
+}
+
+.addContactModal__content input:focus {
+  
+    outline: 1px solid rgb(90, 80, 236);
+    
+}
+
+.addContactModal__content select {
+
+    padding: 1rem 0;
+    border-radius: 4px;
+    background-color: rgba(90, 80, 236, .2);
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: 2rem;
+    border: none;
+
+}
+
+.addContactModal__content select:focus {
+
+    padding: 1rem 0;
+    border-radius: 4px;
+    outline: 1px solid rgba(90, 80, 236, .2);
+}
+
+
+#addContactModalCancel {
+    cursor: pointer;
+    transition: all .3s ;
+    
+}
+
+#addContactModal:active {
+    color: red;
+}
+
