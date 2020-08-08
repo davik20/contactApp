@@ -1,0 +1,90 @@
+<!DOCTYPE html > <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/addContact.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/frontPage.css">
+
+        <script src="https://use.fontawesome.com/d342fa6a3d.js"></script>
+    </head>
+    <body>
+        <!-- Add Contact Modal -->
+        <div id="addContactModalContainer">
+
+        </div>
+            <div class="addContactModal">
+                <form id="addContactForm">
+                    <div class="addContactModal__content">
+                        <div  class="alert"></div>
+                        <i id="addContactModalCancel">&Cross;</i>
+                        <h3>Add Contact</h3>
+                        <input id="name" class="addContactModal__name" name="name" type="text" placeholder="Name"/>
+                        <input id="phone" class="addContactModal__email" name="phone" type="text" placeholder="Phone Number"/>
+                        <select id="type" name="type">
+                            <option value="personal">
+                                PERSONAL
+                            </option>
+                            <option value="professional">
+                                PROFESSIONAL
+                            </option>
+                        </select>
+                        <button type="submit" id="addContactSubmit">
+                            ADD CONTACT
+                        </button>
+                    </div>
+    
+                </form>
+            </div>
+
+        
+        <!-- Add Contact Modal -->
+
+        <nav>
+            <p>
+              DR Davik's  Contacts App
+            </p>
+        </nav>
+
+        <main>
+            <!-- Add contacts block-->
+            <div class="addContactBlock">
+                <i class="fa fa-address-book"></i>
+                <p>
+                    Add Contacts
+                </p>
+
+                <i id="addContactModalShow">&plus;</i>
+            </div>
+            <!-- Add contacts block-->
+
+            <!-- View Contacts -->
+
+            <h3 class="h3" style="text-align: center; margin: 2.5rem;">
+                All Contacts
+            </h3>
+
+            <div id="allContacts">
+
+                
+                <!--
+                       
+                        -->
+                <div class="contact">
+                   
+                    <p style="text-align: center;">You have no Contacts</p>
+                    
+
+
+                </div>
+            </div>
+
+
+        </main>
+
+        <script src="./app.js"></script>
+    </body>
+
+</html>
